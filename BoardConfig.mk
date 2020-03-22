@@ -52,9 +52,6 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --base 0x80000000 --ramdisk_offset 0x02000000 --tags_offset 0x01E00000 --board FPRPG21W000KU --dt device/samsung/gts210vewifi/dt.img
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-
 # Recovery
 RECOVERY_VARIANT := twrp
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -83,3 +80,5 @@ TW_INCLUDE_CRYPTO := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_THEME := landscape_hdpi
+
+TW_DEVICE_VERSION := 1
